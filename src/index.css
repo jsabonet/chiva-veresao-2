@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chiva Computer & Service Design System */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    /* Chiva Brand Colors - Turquoise Blue Primary */
+    --primary: 184 100% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 184 85% 45%;
+    
+    /* Dark Gray/Black Secondary */
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 184 50% 92%;
+    --accent-foreground: 0 0% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 184 100% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom Chiva Colors */
+    --chiva-blue: 184 100% 35%;
+    --chiva-blue-light: 184 85% 45%;
+    --chiva-blue-dark: 184 100% 25%;
+    --chiva-gray: 0 0% 20%;
+    --chiva-gray-light: 0 0% 35%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--chiva-blue)), hsl(var(--chiva-blue-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--chiva-blue)) 0%, hsl(var(--chiva-blue-dark)) 100%);
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px hsl(var(--chiva-blue) / 0.1);
+    --shadow-button: 0 4px 15px hsl(var(--chiva-blue) / 0.25);
+    --shadow-hero: 0 20px 60px hsl(var(--chiva-blue) / 0.2);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 184 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 184 85% 55%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 184 30% 20%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 184 100% 45%;
+
+    /* Update dark mode custom colors */
+    --chiva-blue: 184 100% 45%;
+    --chiva-blue-light: 184 85% 55%;
+    --chiva-blue-dark: 184 100% 35%;
+    --chiva-gray: 0 0% 15%;
+    --chiva-gray-light: 0 0% 25%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
