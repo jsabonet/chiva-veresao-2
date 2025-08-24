@@ -3,6 +3,7 @@ import { Zap, Monitor, Package, Percent } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
+import { IMAGES } from '@/lib/images';
 
 const CategorySection = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const CategorySection = () => {
       description: "Equipamentos robustos para sua indústria",
       items: "150+ produtos",
       bgGradient: "from-primary via-primary-glow to-primary-dark",
-      bgImage: "/src/assets/hero-industrial.jpg",
+      bgImage: IMAGES.heroIndustrial,
       slug: "maquinas-industriais"
     },
     {
@@ -23,7 +24,7 @@ const CategorySection = () => {
       description: "Tecnologia de ponta para seu negócio",
       items: "200+ produtos",
       bgGradient: "from-blue-600 via-blue-700 to-blue-800",
-      bgImage: "/src/assets/hero-tech.jpg",
+      bgImage: IMAGES.heroTech,
       slug: "informatica-acessorios"
     },
     {
@@ -32,7 +33,7 @@ const CategorySection = () => {
       description: "Produtos especiais importados diretamente",
       items: "80+ produtos",
       bgGradient: "from-green-600 via-green-700 to-green-800",
-      bgImage: "/src/assets/product-laptop.jpg",
+      bgImage: IMAGES.productLaptop,
       slug: "importados-diversos"
     },
     {
@@ -41,7 +42,7 @@ const CategorySection = () => {
       description: "Ofertas especiais e produtos em desconto",
       items: "25+ ofertas ativas",
       bgGradient: "from-red-600 via-red-700 to-red-800",
-      bgImage: "/src/assets/product-meat.jpg",
+      bgImage: IMAGES.productMeat,
       slug: "promocoes"
     }
   ];

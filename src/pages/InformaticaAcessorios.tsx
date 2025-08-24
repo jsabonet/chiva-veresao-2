@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
+import { IMAGES } from '@/lib/images';
 
 const InformaticaAcessorios = () => {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const InformaticaAcessorios = () => {
       name: 'Laptop Dell Inspiron 15 3000 - Intel i5 8GB 512GB SSD',
       price: 85000,
       originalPrice: 95000,
-      image: '/src/assets/product-laptop.jpg',
+      image: IMAGES.productLaptop,
       category: 'tech' as const,
       isNew: true,
       discount: 11,
@@ -44,7 +45,7 @@ const InformaticaAcessorios = () => {
       id: 2,
       name: 'Monitor Gaming LG 24" 144Hz IPS Full HD',
       price: 32000,
-      image: '/src/assets/product-monitor.jpg',
+      image: IMAGES.productMonitor,
       category: 'tech' as const,
       isNew: false,
       subcategory: 'monitores',
@@ -55,7 +56,7 @@ const InformaticaAcessorios = () => {
       name: 'Teclado Mecânico Gamer RGB Switches Blue',
       price: 8500,
       originalPrice: 12000,
-      image: '/src/assets/product-keyboard.jpg',
+      image: IMAGES.productKeyboard,
       category: 'tech' as const,
       isNew: false,
       discount: 29,
@@ -66,7 +67,7 @@ const InformaticaAcessorios = () => {
       id: 4,
       name: 'Desktop HP EliteDesk 800 G6 - i7 16GB 1TB SSD',
       price: 120000,
-      image: '/src/assets/product-laptop.jpg',
+      image: IMAGES.productLaptop,
       category: 'tech' as const,
       isNew: true,
       subcategory: 'desktops',
@@ -77,7 +78,7 @@ const InformaticaAcessorios = () => {
       name: 'Impressora Multifuncional HP LaserJet Pro M404dw',
       price: 45000,
       originalPrice: 52000,
-      image: '/src/assets/product-monitor.jpg',
+      image: IMAGES.productMonitor,
       category: 'tech' as const,
       isNew: false,
       discount: 13,
@@ -88,7 +89,7 @@ const InformaticaAcessorios = () => {
       id: 6,
       name: 'Router WiFi 6 TP-Link Archer AX3000 Gigabit',
       price: 18500,
-      image: '/src/assets/product-keyboard.jpg',
+      image: IMAGES.productKeyboard,
       category: 'tech' as const,
       isNew: true,
       subcategory: 'redes',
@@ -99,7 +100,7 @@ const InformaticaAcessorios = () => {
       name: 'SSD Kingston NV2 1TB NVMe PCIe 4.0',
       price: 12000,
       originalPrice: 15000,
-      image: '/src/assets/product-laptop.jpg',
+      image: IMAGES.productLaptop,
       category: 'tech' as const,
       isNew: false,
       discount: 20,
@@ -110,7 +111,7 @@ const InformaticaAcessorios = () => {
       id: 8,
       name: 'Webcam Logitech C920 Full HD 1080p',
       price: 7800,
-      image: '/src/assets/product-monitor.jpg',
+      image: IMAGES.productMonitor,
       category: 'tech' as const,
       isNew: false,
       subcategory: 'acessorios',
@@ -201,7 +202,7 @@ const InformaticaAcessorios = () => {
             
             <div className="hidden lg:block">
               <img 
-                src="/src/assets/hero-tech.jpg" 
+                src={IMAGES.heroTech}
                 alt="Tecnologia e Informática" 
                 className="rounded-lg shadow-2xl"
               />
